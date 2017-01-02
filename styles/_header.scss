@@ -1,0 +1,35 @@
+header{
+	height: 100vh;
+	width: 100vw;
+	padding-top: 6%;
+	background-color: #fbec67;
+		.header_cover{
+			background-image: url('../assets/anastasia_zhenina.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+			-webkit-background-clip: text;
+				h1{
+					font: 6rem "Uni sans caps heavy";
+					letter-spacing: 3.8px;
+					line-height: 0.85;
+					color: transparent;
+				}
+				h2{
+					font-family: 'Palanquin Light', sans-serif;
+					font-size: 1.2rem;
+					position: relative;
+					margin-bottom: 6%;
+						&:before{
+							content:"";
+							position:absolute;
+							background-color: black;
+							width: 7.8%;
+							top:38px;
+							height: 2px;
+						}
+				}
+		}
+		p{
+			padding-top: 2%;
+		}
+}
