@@ -150,7 +150,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   font-family: 'Palanquin Light', sans-serif;
   font-size: 16px;
-  max-width: 1280px;
   width: 100%;
   margin: 0 auto; }
 
@@ -178,9 +177,11 @@ p {
   background: black;
   color: white; }
 
+section {
+  height: 100vh; }
+
 header {
   height: 100vh;
-  width: 100vw;
   padding-top: 6%;
   background-color: #fbec67; }
   header .header_cover {
@@ -189,21 +190,69 @@ header {
     background-attachment: fixed;
     -webkit-background-clip: text; }
     header .header_cover h1 {
-      font: 6rem "Uni sans caps heavy";
+      font: 7.5rem "Uni sans caps heavy";
       letter-spacing: 3.8px;
       line-height: 0.85;
       color: transparent; }
     header .header_cover h2 {
       font-family: 'Palanquin Light', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       position: relative;
       margin-bottom: 6%; }
       header .header_cover h2:before {
         content: "";
         position: absolute;
         background-color: black;
-        width: 7.8%;
+        width: 85px;
         top: 38px;
         height: 2px; }
+    header .header_cover p {
+      font-size: 1.2rem; }
   header p {
-    padding-top: 2%; }
+    padding-top: 4%; }
+
+.face {
+  background-color: lightblue; }
+  .face .face_img_container {
+    height: 100vh; }
+    .face .face_img_container .face_img {
+      padding-top: 5%;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100vh; }
+      .face .face_img_container .face_img img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto; }
+      .face .face_img_container .face_img .clip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        -webkit-clip-path: polygon(73% 27%, 70% 16%, 67% 10%, 60% 4%, 49% 1%, 42% 1%, 34% 3%, 28% 9%, 26% 16%, 24% 25%, 24% 28%);
+                clip-path: polygon(73% 27%, 70% 16%, 67% 10%, 60% 4%, 49% 1%, 42% 1%, 34% 3%, 28% 9%, 26% 16%, 24% 25%, 24% 28%); }
+        .face .face_img_container .face_img .clip img {
+          width: 100%; }
+
+.parallax {
+  background: url(../assets/space.jpg) center no-repeat fixed;
+  position: relative;
+  background-size: cover;
+  z-index: 0; }
+  .parallax .rellax {
+    width: 100%; }
+    .parallax .rellax img {
+      max-width: 100%; }
+  .parallax .rellax:first-child {
+    position: absolute;
+    z-index: 5;
+    top: 50%; }
+  .parallax .rellax:nth-of-type(2) {
+    position: absolute;
+    z-index: 10;
+    top: 60%; }
+  .parallax .rellax:nth-of-type(3) {
+    position: absolute;
+    z-index: 15;
+    top: 70%; }

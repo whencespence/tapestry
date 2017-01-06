@@ -1,0 +1,28 @@
+.face{
+	background-color: lightblue;
+		.face_img_container{
+			height: 100vh;
+				.face_img{
+					padding-top: 5%;
+					position: relative;
+					z-index: 1;
+					width: 100%;
+					height: 100vh;
+						img{
+							max-width: 100%;
+							display: block;
+							margin: 0 auto;
+						}
+					.clip{
+						position: absolute;
+						top:0;
+						left:0;
+						z-index: 5;
+						clip-path: polygon(73% 27%, 70% 16%, 67% 10%, 60% 4%, 49% 1%, 42% 1%, 34% 3%, 28% 9%, 26% 16%, 24% 25%, 24% 28%);
+							img{
+								width: 100%;
+							}
+					}
+				}
+		}
+}

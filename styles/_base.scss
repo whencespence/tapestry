@@ -14,7 +14,6 @@
 body{
 	font-family: 'Palanquin Light', sans-serif;
 	font-size: 16px;
-	max-width:1280px;
 	width: 100%;
 	margin:0 auto;
 }
@@ -35,4 +34,7 @@ p{
 ::-moz-selection {
 	background: black;
 	color: white;
+}
+section{
+	height:100vh;
 }
